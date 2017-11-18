@@ -2,8 +2,8 @@
   <div class="container">
     <div class="row">
   <app-header :quoteCount="quotes.length" :maxQuotes="maxQuotes"></app-header>
-  <new-quote @quoteAdded="newQuote"></new-quote>
-    <quote-grid :quotes="quotes" @quoteDeleted="deleteQuote"></quote-grid>
+  <new-quote @quoteAdded="newQuote"></new-quote> /* event listeners - quoteAdded */
+    <quote-grid :quotes="quotes" @quoteDeleted="deleteQuote"></quote-grid> /* event listeners - quoteDeleted */
 
     <div class="col-sm-12 text-center">
       <div class="alert alert-info">Info! Click Quotes to delete it respectively</div>
